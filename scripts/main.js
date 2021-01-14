@@ -35,6 +35,18 @@ LocationList();
 Quotes import
 */
 
+import { useQuotes } from './quotes/QuoteDataProvider.js'
+
+const alltheQuotes = useQuotes()
+
+for (const quote of alltheQuotes) {
+    console.log(quote)
+}
+
+import { QuoteList } from './quotes/QuoteList.js'
+
+QuoteList();
+
 /*
 Tips import
 */
