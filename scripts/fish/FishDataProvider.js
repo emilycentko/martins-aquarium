@@ -13,7 +13,7 @@ const fishCollection = [
         location: "Great Barrier Reef, Australia",
         size: "6 inches",
         food: "planktan",
-        image: "https://img.etimg.com/thumb/msid-72258617,width-1200,height-900,imgsize-797254,overlay-etpanache/photo.jpg"
+        image: "https://img.etimg.com/thumb/msid-72258617,width-1200,height-900,imgsize-797254,overlay-etpanache/photo.jpg",
     },
     {
         name: "Dory",
@@ -21,7 +21,7 @@ const fishCollection = [
         location: "Indo-Pacific coral reefs",
         size: "9 inches",
         food: "planktan and algae",
-        image: "https://cdn.mos.cms.futurecdn.net/BgZFhT7piMqXpyzfWrdKyP.jpg"
+        image: "https://cdn.mos.cms.futurecdn.net/BgZFhT7piMqXpyzfWrdKyP.jpg",
     },
     {
         name: "Rocky",
@@ -29,7 +29,7 @@ const fishCollection = [
         location: "Asia",
         size: "2 inches",
         food: "crustaceans",
-        image: "https://www.aquariadise.com/wp-content/uploads/2019/07/Betta-fish-in-the-wild-1.jpg"
+        image: "https://www.aquariadise.com/wp-content/uploads/2019/07/Betta-fish-in-the-wild-1.jpg",
     },
     {
         name: "Aziraphale",
