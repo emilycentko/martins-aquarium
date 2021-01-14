@@ -90,7 +90,7 @@ footer {
 }
 
 .containerLeft {
-    flex-basis: 75%
+    flex-basis: 75%;
 }
 
 .containerLeft__travelLocations {
@@ -114,5 +114,5 @@ footer {
     border: solid 2px #003d4d;
     padding: 20px;
     margin: 20px;
-    color #e6faff;
+    color: #e6faff;
 }
