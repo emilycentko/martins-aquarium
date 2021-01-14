@@ -38,3 +38,15 @@ Quotes import
 /*
 Tips import
 */
+
+import { useTips } from './tips/TipDataProvider.js'
+
+const alltheTips = useTips()
+
+for (const tip of alltheTips) {
+    console.log(tip)
+}
+
+import { TipList } from './tips/TipList.js'
+
+TipList();
