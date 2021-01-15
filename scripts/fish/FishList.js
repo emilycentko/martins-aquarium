@@ -1,28 +1,34 @@
-import { useFish } from './FishDataProvider.js'
+import { mostHolyFish, soldierFish, nonHolyFish } from './FishDataProvider.js'
 import { Fish } from "./Fish.js"
+
+const buildFishListHTML = (arrayOfFish, header) => {
+    let fishHTMLRepresentations = `<h3>${header}</h3>`
+    for (const fishObj of arrayOfFish) {
+       fishHTMLRepresentations += Fish(fishObj)
+    }
+    return fishHTMLRepresentations
+}
 
 export const FishList = () => {
 
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".containerLeft__fishList")
-    const fishes = useFish()
+    /*const fishArray = useFish()*/
+    const holyFishArray = mostHolyFish()
+    const holyFishHTMLRepresentations = buildFishListHTML(holyFishArray, "Holy Fish")
 
-    // Generate all of the HTML for all of the fish
-    let fishHTMLRepresentations = ""
-    for (const fish of fishes) {
-        /*
-            Invoke the Fish component function
-            and pass the current fish object as an argument.
-            Each time, add the return value to the
-            fishHTMLRepresentations variable with `+=`
-        */
-       fishHTMLRepresentations += Fish(fish)
-    }
+    const soldierFishArray = soldierFish()
+    const soldierFishHTMLRepresentations = buildFishListHTML(soldierFishArray, "Soldier Fish")
+
+    const regularFishArray = nonHolyFish()
+    const regularFishHTMLRepresentations = buildFishListHTML(regularFishArray, "Regular Fish")
 
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
         <article class="fishList">
-            ${fishHTMLRepresentations}
+            ${holyFishHTMLRepresentations}
+            ${soldierFishHTMLRepresentations}
+            ${regularFishHTMLRepresentations}
         </article>
     `
 }
