@@ -9,7 +9,7 @@ const quoteCollection = [
     },
     {
         text: "It's ok to eat fish because they don't have any feelings.",
-        author: "Nirvana",
+        author: "- Nirvana",
     }
 ]
 
